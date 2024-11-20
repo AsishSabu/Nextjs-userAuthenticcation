@@ -1,6 +1,6 @@
 import React from "react";
 
-const Profile = ({ params }: any) => {
+const Profile = ({ params }) => {
   return (
     <div className="text-center text-3xl">
       Profile <span className="bg-red-800">{params.id}</span>

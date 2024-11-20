@@ -20,7 +20,7 @@ export default function Home() {
 
   const logout = async () => {
     try {
-      const response = await axios.get("/api/users/logout");
+      await axios.get("/api/users/logout");
       router.push("/login");
     } catch (error) {
       console.log(error);
