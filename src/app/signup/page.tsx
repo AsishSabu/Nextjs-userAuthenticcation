@@ -12,12 +12,12 @@ const SignupPage = () => {
     password: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit =async(e) => {
+  const handleSubmit =async(e:any) => {
     e.preventDefault();
     console.log("Form Data:", formData);
     const response=await axios.post("/api/users/signup", formData)

@@ -49,7 +49,7 @@ console.log(transporter);
     const mailResponse = await transporter.sendMail(mailOptions);
     console.log(mailResponse,"mailResponse")
     return mailResponse;
-  } catch (error) {
+  } catch (error:any) {
     throw new Error(error.message);
   }
 };
