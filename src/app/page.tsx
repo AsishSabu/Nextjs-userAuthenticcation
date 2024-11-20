@@ -30,9 +30,7 @@ export default function Home() {
   return (
     <>
       <div
-        className="leading-normal tracking-normal text-indigo-400 bg-cover bg-gray-300 bg-fixed m-6"
-        style={{ backgroundImage: `url('/header.png')` }}
-      >
+        className="leading-normal tracking-normal text-indigo-400 bg-cover bg-gray-300 bg-fixed m-6">
         <div className="h-full">
           {/* Nav */}
           <div className="container mx-auto">

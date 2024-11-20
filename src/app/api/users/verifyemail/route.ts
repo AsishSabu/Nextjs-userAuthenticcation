@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
     user.verifyExpires = undefined;
     await user.save();
     return NextResponse.json({ message: "Email verified successfully" }, { status: 200 });
-  } catch (error) {
+  } catch (error:any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
